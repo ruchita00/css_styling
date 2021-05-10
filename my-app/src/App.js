@@ -8,6 +8,7 @@ import SideMenu from "./components/SideMenu"
 import Cards from "./components/Cards"
 import Popup from "./components/Popup"
 import Radio from "./components/Radio"
+import DropDown from "./components/DropDown"
 
 const theme=createMuiTheme({
   palette:{
@@ -39,6 +40,7 @@ function App() {
      <Cards />
      <Popup />
      <Radio />
+     <DropDown />
     
      {/* <PageHeader title="Page Header" subTitle="Page description" icon={<ReceiptIcon />} /> */}
     </ThemeProvider>
