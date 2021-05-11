@@ -1,6 +1,5 @@
-import {withStyles ,Select, MenuItem } from '@material-ui/core'
-import React from 'react'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import React from "react"
+import {withStyles } from '@material-ui/core'
 
 
 const style=(theme=>({
@@ -19,21 +18,22 @@ borderRadius: '8px',
     }
 }))
 
+const Dropdown=(props)=>{
+    const {classes}=props;
+   return(
+       <div>
+       <div>
+ 
+           <select className={classes.root}>       
+              <option value="all status">All Status</option>
+               <option value="active">Active</option>
+               <option value="pending">Pending</option>
+               <option value="past">Past</option>
 
-const DropDown=(props)=> {
-    const{classes}=props;
-
-    return (
-        <div>
-            
-            <Select value=""  displayEmpty  className={classes.root} >
-            <MenuItem value="" >All Status</MenuItem>
-                <MenuItem value={1}>Active</MenuItem>
-                 <MenuItem value={2}>Pending</MenuItem>
-            <MenuItem value={3}>Past</MenuItem>
-            </Select>
-        </div>
-    )
+           </select>
+        
+       </div>
+       </div>
+   )
 }
-
-export default withStyles(style)(DropDown);
+export default withStyles(style)(Dropdown);
