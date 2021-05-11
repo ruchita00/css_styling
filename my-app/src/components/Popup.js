@@ -62,7 +62,7 @@ const Popup = () => {
     return (
           <div>
         <Button variant="outlined" color="primary" style={{borderRadius:50  }} onClick={handleClickOpen}>
-          Add Coverage
+          Middle popup
         </Button>
         <Dialog  
   fullWidth

@@ -20,7 +20,7 @@ export default function FormControlLabelPlacement() {
                 <FormControlLabel
           value="top"
           control={<Checkbox color="primary" />}
-          labelPlacement="side" label="I agree to the eHealth's terms and conditions" /> 
+          labelPlacement="side" label="I agree " /> 
 
         
              </RadioGroup>
