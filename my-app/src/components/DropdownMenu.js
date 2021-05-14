@@ -128,7 +128,7 @@ const Option = (props) => {
         alignItems: "center",
       }}
     >
-      {value == "1" ? null : (
+      {value === "1" ? null : (
         <div
           style={{
             height: "10px",

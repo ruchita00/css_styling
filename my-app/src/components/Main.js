@@ -2,8 +2,6 @@ import React from "react";
 import { withStyles } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./Main.css";
-import Button from "@material-ui/core/Button";
-import Select from "react-select";
 import Table from "./Table";
 // import Table1 from "./Table1"
 import Popupwindow from "./Popupwindow";
@@ -98,14 +96,9 @@ const style = (theme) => ({
 });
 
 const Main = (props) => {
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
 
   const { classes } = props;
-  function clickHandler() {}
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   return (
     <div>

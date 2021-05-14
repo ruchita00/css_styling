@@ -4,13 +4,11 @@ import {
   AppBar,
   Toolbar,
   Grid,
-  InputBase,
   Badge,
   IconButton,
 } from "@material-ui/core";
 import HelpIcon from "@material-ui/icons/Help";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import avatar from "../assets/avatar.png";
 
@@ -79,7 +77,7 @@ const HeaderMenu = (props) => {
             <IconButton></IconButton>
             <IconButton>
               <div>
-                <img
+                <img alt='img'
                   src={avatar}
                   style={{
                     position: "relative",

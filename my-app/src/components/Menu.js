@@ -101,31 +101,31 @@ const Menu = (props) => {
     <>
       <div className={classes.SideMenu}>
         <div className={classes.title}>
-          <img src={title} className={classes.title} />
+          <img src={title} alt='titlebar-img' className={classes.title} />
         </div>
 
         <NavLink exact activeClassName="active_class" to="/home">
           <div className={classes.home}>
-            <img src={home} className={classes.img} />
+            <img src={home} alt='home-img' className={classes.img} />
             Home
           </div>
         </NavLink>
         <NavLink exact activeClassName="active_class" to="/circles">
           <div className={classes.Circles}>
-            <img src={download} className={classes.img} />
+            <img src={download}  alt='circle-img' className={classes.img} />
             Circles
           </div>
         </NavLink>
 
         <NavLink exact activeClassName="active_class" to="/services">
           <div className={classes.Services}>
-            <img src={circles} className={classes.img} />
+            <img src={circles} alt='services-img' className={classes.img} />
             Services
           </div>
         </NavLink>
         <NavLink exact activeClassName="active_class" to="/utilities">
           <div className={classes.Utilities}>
-            <img src={utilities} className={classes.img} />
+            <img src={utilities} alt='utilities-img' className={classes.img} />
             Utilities
           </div>
         </NavLink>

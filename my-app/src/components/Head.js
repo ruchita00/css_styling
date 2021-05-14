@@ -1,5 +1,5 @@
 import React from "react";
-import { withStyles, AppBar, Toolbar } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 
 const style = (theme) => ({
   header: {

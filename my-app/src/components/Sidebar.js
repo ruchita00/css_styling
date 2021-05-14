@@ -98,24 +98,24 @@ const Sidebar = (props) => {
   return (
     <div className={classes.SideMenu}>
       <div className={classes.title}>
-        <img src={title} className={classes.title} />
+        <img src={title} alt="title-img" className={classes.title} />
       </div>
 
       <div className={classes.home}>
-        <img src={home} className={classes.img} />
+        <img src={home} alt='home-img' className={classes.img} />
         Home
       </div>
 
       <div className={classes.Circles}>
-        <img src={download} className={classes.img} />
+        <img src={download} alt='circle-img' className={classes.img} />
         Circles
       </div>
       <div className={classes.Services}>
-        <img src={circles} className={classes.img} />
+        <img src={circles} alt='services-img' className={classes.img} />
         Services
       </div>
       <div className={classes.Utilities}>
-        <img src={utilities} className={classes.img} />
+        <img src={utilities} alt='utilities-img' className={classes.img} />
         Utilities
       </div>
     </div>

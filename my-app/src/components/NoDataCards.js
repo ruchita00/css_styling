@@ -31,15 +31,9 @@ const propTypes = {};
 const NoDataCards = (props) => {
   const {
     classes,
-    rootClass,
-    title,
-    background,
     onClick,
-    src,
     text,
     btnTitle,
-    iconClass,
-    ...rest
   } = props;
 
   return (
