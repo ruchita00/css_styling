@@ -1,52 +1,52 @@
-import { createMuiTheme, CssBaseline, makeStyles, ThemeProvider} from "@material-ui/core";
-import React from "react"
-import './App.css';
+import {
+  createMuiTheme,
+  CssBaseline,
+  makeStyles,
+  ThemeProvider,
+} from "@material-ui/core";
+import React from "react";
+import "./App.css";
 import Header from "./components/Header";
-//import PageHeader from "./components/PageHeader";
-import SideMenu from "./components/SideMenu"
-//import ReceiptIcon from '@material-ui/icons/Receipt';
-import Cards from "./components/Cards"
+import Main from "./components/Main";
+import Sidebar from "./components/Sidebar";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
+import DropdownMenu from "./components/DropdownMenu";
 import Popup from "./components/Popup"
-import Radio from "./components/Radio"
-import DropDown from "./components/DropDown"
-import NoDataCards from "./components/NoDataCards"
 
-const theme=createMuiTheme({
-  palette:{
-    secondary:{
-     main:"#f83245",
-     light:"#f8324526"
+
+const theme = createMuiTheme({
+  palette: {
+    secondary: {
+      main: "#f83245",
+      light: "#f8324526",
     },
-    background:{
-      default:'#ECF0F1'
-    }
-  }
-})
+    background: {
+      default: "#E5E5E5",
+    },
+  },
+});
 
-const useStyles=makeStyles({
-  appMain:{
-    paddingLeft:"320px",
-    width:"100%"
-  }
-})
+const useStyles = makeStyles({
+  appMain: {
+    paddingLeft: "320px",
+    width: "100%",
+  },
+});
 
 function App() {
-  const classes =useStyles();
+  const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-     <SideMenu />     
-     <div className={classes.appMain}> </div>
-     <CssBaseline />
-     <Header />
-     <Cards />
-     <Popup />
-     <Radio />
-     <DropDown />
-     <NoDataCards />
-    
-     {/* <PageHeader title="Page Header" subTitle="Page description" icon={<ReceiptIcon />} /> */}
-    </ThemeProvider>
+      <RemoveScrollBar />
 
+      <div className={classes.appMain}> </div>
+      <CssBaseline />
+      <Header />
+      <Main />
+      <Sidebar />
+      <Popup />
+      <DropdownMenu />
+    </ThemeProvider>
   );
 }
 

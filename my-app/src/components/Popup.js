@@ -61,9 +61,7 @@ const Popup = () => {
 
     return (
           <div>
-        <Button variant="outlined" color="primary" style={{borderRadius:50  }} onClick={handleClickOpen}>
-          Middle popup
-        </Button>
+        
         <Dialog  
   fullWidth
   maxWidth="sm" onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>

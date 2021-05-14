@@ -1,0 +1,11 @@
+.drop{
+    position:absolute;
+    width:1040px;
+    left:360px;
+    top:312px;
+    background:#ffffff;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 16px;
+
+}

@@ -1,15 +1,24 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles({
-  root: {
-    minWidth: 275,
+  cards: {
+    position:"absolute",
+      left:'25%',
+      right:'61.11%',
+   top:'26.56%',
+   bottom:'61.72%',
+   background:'#FFFFFF',
+   boxShadow:'0px 2px 6px rgba(0,0,0,0.15)',
+   borderRadius:'12px'
+  
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+  card: {
+    margin: '6%',
+    transition: 'all 0.4s cubic-bezier(0.175,0.885,0,1)',
+    backgroundColor:'#fff',
+    width:'21.25%'
   },
   title: {
     fontSize: 14,
@@ -19,13 +28,14 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Cards() {
-  const classes = useStyles();
-  
+export default function Cards(props) {
+  const{classes}=props;
 
-  return (
-    <Paper elevation={3} className={classes.root}>
-      
-    </Paper>
+    return (
+<>
+<div className={classes.cards}>
+  
+</div>
+</>
   );
 }

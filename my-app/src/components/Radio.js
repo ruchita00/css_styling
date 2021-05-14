@@ -8,14 +8,14 @@ import Checkbox from '@material-ui/core/Checkbox';
 export default function FormControlLabelPlacement() {
   return (
     <FormControl component="fieldset">
-      <RadioGroup row aria-label="position" name="position" >
+      <RadioGroup row aria-label="position" name="position" fontSize="small" >
         <FormControlLabel
           value="top"
           control={<Radio color="primary" />}
           label="Self"
           labelPlacement="rightside"
         />   
-                <FormControlLabel value="end" control={<Radio color="primary" />} label="Other" />
+                <FormControlLabel value="end" control={<Radio color="primary" />} fontSize="small" label="Other" />
                 
                 <FormControlLabel
           value="top"
