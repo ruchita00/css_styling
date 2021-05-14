@@ -40,7 +40,11 @@ const HeaderMenu = (props) => {
     <AppBar
       position="static"
       className={style.root}
-      style={{ boxShow: "0px 0px 0px 0px", height: "50px", backgroundColor: "white" }}
+      style={{
+        boxShow: "0px 0px 0px 0px",
+        height: "50px",
+        backgroundColor: "white",
+      }}
     >
       <Toolbar>
         <Grid container alignItems="center">

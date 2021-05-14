@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 import Select from "react-select";
 import Table from "./Table";
 // import Table1 from "./Table1"
-import Popupwindow from "./Popupwindow"
+import Popupwindow from "./Popupwindow";
 
 const style = (theme) => ({
   root: {
@@ -95,7 +95,6 @@ const style = (theme) => ({
     display: "flex",
     alignItems: "center",
   },
-  
 });
 
 const Main = (props) => {
@@ -103,11 +102,10 @@ const Main = (props) => {
 
   const { classes } = props;
   function clickHandler() {}
- 
+
   const handleClickOpen = () => {
     setOpen(true);
   };
-
 
   return (
     <div>
@@ -138,8 +136,9 @@ const Main = (props) => {
       </button>
 
       <div className={classes.table}>
-        <span><Table /></span>
-       
+        <span>
+          <Table />
+        </span>
       </div>
     </div>
   );

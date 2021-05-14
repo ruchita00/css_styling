@@ -11,8 +11,7 @@ import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
 import DropdownMenu from "./components/DropdownMenu";
-import Popup from "./components/Popup"
-
+import Popup from "./components/Popup";
 
 const theme = createMuiTheme({
   palette: {
