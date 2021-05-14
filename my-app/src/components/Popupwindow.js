@@ -7,8 +7,7 @@ import MuiDialogActions from "@material-ui/core/DialogActions";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
-import { TextareaAutosize } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 const styles = (theme) => ({
   root: {
@@ -46,7 +45,7 @@ const styles = (theme) => ({
     color: "#ffffff",
     background: "#036FCB",
     borderRadius: "40px",
-  },
+  }
 });
 
 const DialogTitle = withStyles(styles)((props) => {
@@ -68,10 +67,7 @@ const DialogTitle = withStyles(styles)((props) => {
 });
 
 const DialogActions = withStyles((theme) => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing(1),
-  },
+
 }))(MuiDialogActions);
 
 const Popupwindow = (props) => {
@@ -87,38 +83,24 @@ const Popupwindow = (props) => {
   };
 
   return (
-    <div>
+    <div >
       <button className={classes.button} onClick={handleClickOpen}>
-        Add Coverage{" "}
+        Add Coverage
       </button>
       <Dialog
         fullWidth
         maxWidth="sm"
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
-        open={open}
-      >
+        open={open} 
+      ><CheckCircleIcon />
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           <strong>Cancellation Date</strong>
         </DialogTitle>
         <Typography gutterBottom>
           Please Select the date which you want your plan to end.
         </Typography>
-        <Button
-          variant="outlined"
-          color="primary"
-          style={{ width: "200px", height: "40px" }}
-          onClick={handleClickOpen}
-        >
-          Add Coverage <ExpandMoreIcon />
-        </Button>
-        <br />
-        <TextareaAutosize
-          aria-label="minimum height"
-          rowsMin={3}
-          placeholder="Write your reason here"
-        />
-        <DialogActions>
+                <DialogActions>
           <Button
             autoFocus
             onClick={handleClose}
