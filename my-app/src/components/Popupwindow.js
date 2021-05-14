@@ -7,6 +7,7 @@ import MuiDialogActions from "@material-ui/core/DialogActions";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
+
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 const styles = (theme) => ({
@@ -159,12 +160,12 @@ const Popupwindow = (props) => {
             width: "440px",
             height: "72px",
             left: "0px",
-            top: "0px",
-            fontSize: "16px",
+            top: "-10px",
+            fontSize: "14px",
             lineHeight: "24px",
             flexGrow: 0,
-            margin: "50px 0px",
-            padding: "36px",
+            margin: "60px 0px",
+            padding: "25px",
           }}
         >
           Your health plan has been successfully added, You can see the details
@@ -172,15 +173,31 @@ const Popupwindow = (props) => {
         </div>
 
         <DialogActions>
-          <Button
+          <button
             autoFocus
             onClick={handleClose}
             variant="contained"
             color="primary"
-            style={{ borderRadius: 50, left: "-34.00%", color: "white" }}
+            style={{
+              // flex: 0.5,
+              position: "absolute",
+              borderRadius: 50,
+              top: "80.76%",
+              width: "135px",
+              height: "35px",
+              // display: "center",
+              // justifyContent: "center",
+              // alignItem: "center",
+              left: "34.00%",
+              border: "hidden",
+              color: "#FFFFFF",
+              background: "#036FCB",
+              // margin:'40px 0px',
+              overflow:'hidden'
+            }}
           >
             View Details
-          </Button>
+          </button>
         </DialogActions>
       </Dialog>
     </div>
