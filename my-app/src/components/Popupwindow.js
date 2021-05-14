@@ -7,7 +7,7 @@ import MuiDialogActions from "@material-ui/core/DialogActions";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 const styles = (theme) => ({
   root: {
@@ -45,7 +45,7 @@ const styles = (theme) => ({
     color: "#ffffff",
     background: "#036FCB",
     borderRadius: "40px",
-  }
+  },
 });
 
 const DialogTitle = withStyles(styles)((props) => {
@@ -59,7 +59,19 @@ const DialogTitle = withStyles(styles)((props) => {
           className={classes.closeButton}
           onClick={onClose}
         >
-          <CloseIcon />
+          <CloseIcon
+            style={{
+              position: "absolute",
+              left: "550%",
+              right: "0%",
+              top: "-280.67%",
+              bottom: "16.67%",
+              fontSize: "24px",
+              lineHeight: "16px",
+              display: "flex",
+              color: "#000000",
+            }}
+          />
         </IconButton>
       ) : null}
     </MuiDialogTitle>
@@ -67,7 +79,10 @@ const DialogTitle = withStyles(styles)((props) => {
 });
 
 const DialogActions = withStyles((theme) => ({
-
+  root: {
+    margin: 0,
+    padding: theme.spacing(1),
+  },
 }))(MuiDialogActions);
 
 const Popupwindow = (props) => {
@@ -83,41 +98,88 @@ const Popupwindow = (props) => {
   };
 
   return (
-    <div >
+    <div>
       <button className={classes.button} onClick={handleClickOpen}>
         Add Coverage
       </button>
       <Dialog
         fullWidth
-        maxWidth="sm"
+        maxWidth="xs"
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
-        open={open} 
-      ><CheckCircleIcon />
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          <strong>Cancellation Date</strong>
+        open={open}
+      >
+        <CheckCircleIcon
+          style={{
+            position: "absolute",
+            left: "40.00%",
+            right: "0%",
+            top: "0%",
+            bottom: "16.67%",
+            fontSize: "73px",
+            lineHeight: "35px",
+            display: "flex",
+            alignItems: "center",
+            color: "#27AC60",
+            padding: "8px",
+            margin: "10px",
+          }}
+        />
+        <DialogTitle
+          id="customized-dialog-title"
+          onClose={handleClose}
+          style={{
+            postion: "absolute",
+            width: "162px",
+            height: "24px",
+            left: "30.00%",
+            top: "70px",
+            display: "flex",
+            alignItems: "center",
+            color: "#000000",
+            padding: "10px",
+            margin: "10px",
+          }}
+        >
+          <strong>Congratulations!</strong>
         </DialogTitle>
-        <Typography gutterBottom>
-          Please Select the date which you want your plan to end.
-        </Typography>
-                <DialogActions>
+
+        <div
+          variant="outlined"
+          color="primary"
+          style={{ width: "200px", height: "40px" }}
+        ></div>
+        <br />
+        <div
+          aria-label="maximum height"
+          rowsMin={3}
+          gutterBottom
+          style={{
+            position: "static",
+            width: "440px",
+            height: "72px",
+            left: "0px",
+            top: "0px",
+            fontSize: "16px",
+            lineHeight: "24px",
+            flexGrow: 0,
+            margin: "50px 0px",
+            padding: "36px",
+          }}
+        >
+          Your health plan has been successfully added, You can see the details
+          by clicking on the health plan in the coverage list.
+        </div>
+
+        <DialogActions>
           <Button
             autoFocus
             onClick={handleClose}
             variant="contained"
             color="primary"
-            style={{ borderRadius: 50, color: "white" }}
+            style={{ borderRadius: 50, left: "-34.00%", color: "white" }}
           >
-            Go Back
-          </Button>
-          <Button
-            autoFocus
-            onClick={handleClose}
-            variant="outlined"
-            color="primary"
-            style={{ borderRadius: 50 }}
-          >
-            Proceed to Cancel
+            View Details
           </Button>
         </DialogActions>
       </Dialog>
