@@ -96,7 +96,7 @@ const Sidebar = (props) => {
   const { classes } = props;
 
   return (
-    <div className={classes.SideMenu}>
+    <div className={classes.SideMenu} >
       <div className={classes.title}>
         <img src={title} alt="title-img" className={classes.title} />
       </div>
