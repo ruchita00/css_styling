@@ -20,7 +20,7 @@ const style = (theme) => ({
     heigh: "80px",
     // left:'320px',
     // top:'0px',
-    boxShow: "0px 0px 0px 0px",
+    // boxShow: "0px 0px 0px 0px",
     // backgroundColor:'white'
     // border: '2px solid #ECF0F1',
   },
@@ -39,7 +39,7 @@ const HeaderMenu = (props) => {
       position="static"
       className={style.root}
       style={{
-        boxShow: "0px 0px 0px 0px",
+        boxShadow: "0px 0px 0px 0px",
         height: "50px",
         backgroundColor: "white",
       }}
