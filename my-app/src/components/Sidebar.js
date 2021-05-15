@@ -107,11 +107,11 @@ const Sidebar = (props) => {
       </div>
 
       <div className={classes.Circles}>
-        <img src={download} alt='circle-img' className={classes.img} />
+        <img src={circles} alt='circle-img' className={classes.img} />
         Circles
       </div>
       <div className={classes.Services}>
-        <img src={circles} alt='services-img' className={classes.img} />
+        <img src={download} alt='services-img' className={classes.img} />
         Services
       </div>
       <div className={classes.Utilities}>

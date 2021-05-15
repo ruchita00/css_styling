@@ -6,7 +6,6 @@ import Table from "./Table";
 // import Table1 from "./Table1"
 import Popupwindow from "./Popupwindow";
 
-
 const style = (theme) => ({
   root: {
     position: "absolute",
@@ -83,7 +82,7 @@ const style = (theme) => ({
     boxShadow: "0px 2px 10px rgba(0,0,0,0.08)",
     borderRadius: "8px",
   },
-  icon: {
+  expand_icon: {
     position: "absolute",
     left: "78.74%",
     right: "56.6%",
@@ -94,11 +93,22 @@ const style = (theme) => ({
     display: "flex",
     alignItems: "center",
   },
+  past_3_months_button: {
+    position: "absolute",
+    width: "97px",
+    height: "17px",
+    left: "15px",
+    top: "11px",
+    fontWeight: "500",
+    fontSize: "14px",
+    lineHeight: "16px",
+    display: "flex",
+    alignItems: "center",
+    color: "#4B4B4B",
+  },
 });
 
 const Main = (props) => {
-  // const [open, setOpen] = React.useState(false);
-
   const { classes } = props;
 
   return (
@@ -107,27 +117,11 @@ const Main = (props) => {
         Services/Coverage
       </div>
       <div className={classes.sub}>Coverage</div>
-      <Popupwindow /> 
-      {/* <Button_popup /> */}
+      <Popupwindow />
+
       <button className={classes.container}>
-        <div
-          style={{
-            position: "absolute",
-            width: "97px",
-            height: "17px",
-            left: "15px",
-            top: "11px",
-            fontWeight: "500",
-            fontSize: "14px",
-            lineHeight: "16px",
-            display: "flex",
-            alignItems: "center",
-            color: "#4B4B4B",
-          }}
-        >
-          Past 3 months
-        </div>
-        <ExpandMoreIcon className={classes.icon} />
+        <div className={classes.past_3_months_button}>Past 3 months</div>
+        <ExpandMoreIcon className={classes.expand_icon} />
       </button>
 
       <div className={classes.table}>

@@ -15,14 +15,7 @@ import avatar from "../assets/avatar.png";
 const style = (theme) => ({
   root: {
     backgroundColor: "#ffff",
-
-    // width:'1120px',
     heigh: "80px",
-    // left:'320px',
-    // top:'0px',
-    // boxShow: "0px 0px 0px 0px",
-    // backgroundColor:'white'
-    // border: '2px solid #ECF0F1',
   },
 
   img: {
