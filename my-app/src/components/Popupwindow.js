@@ -179,20 +179,16 @@ const Popupwindow = (props) => {
             variant="contained"
             color="primary"
             style={{
-              // flex: 0.5,
               position: "absolute",
               borderRadius: 50,
               top: "80.76%",
               width: "135px",
               height: "35px",
-              // display: "center",
-              // justifyContent: "center",
-              // alignItem: "center",
               left: "34.00%",
               border: "hidden",
               color: "#FFFFFF",
               background: "#036FCB",
-              // margin:'40px 0px',
+            
               overflow:'hidden'
             }}
           >

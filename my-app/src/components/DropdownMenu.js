@@ -1,8 +1,6 @@
 import React from "react";
 import chroma from "chroma-js";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
-// import { colourOptions } from './data';
 import Select from "react-select";
 
 const dot = (color = "#ccc") => ({
@@ -40,8 +38,7 @@ const colourStyles = {
   },
   menu: (css) => ({
     ...css,
-    width: "120px",
-    // ...(isCalculatingWidth && { height: 0, visibility: "hidden" })
+    width: "150px",
   }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     console.log("option-data", data);
@@ -49,20 +46,9 @@ const colourStyles = {
     return {
       ...styles,
       width: "150px",
-      
+
       backgroundColor: isSelected ? "#F1F4F5" : "#FFFFFF",
       Color: isSelected ? "black" : "black",
-
-      // "&:hover": {
-      //   backgroundColor: "white",
-      //   // color: "red"
-      // },
-      // "&:onclick": {
-      //   // borderColor: "white",
-      //   backgroundColor: "red",
-
-      //   // color: "red"
-      // },
 
       color: isSelected
         ? chroma.contrast(color, "white") > 2
@@ -70,11 +56,6 @@ const colourStyles = {
           : "black"
         : "black",
       cursor: isDisabled ? "not-allowed" : "default",
-
-      // ":active": {
-      //   ...styles[":active"],
-      //   backgroundColor: isSelected ? data.color : color,
-      // },
     };
   },
 
@@ -158,10 +139,8 @@ const DropdownMenu = () => (
       DropdownIndicator: () => <ExpandMoreIcon />,
       IndicatorSeparator: () => null,
       Cursor: () => null,
-
       Option,
     }}
-    // Components={<div><div>dot</div><span>ab</span></div>}
   />
 );
 export default DropdownMenu;
