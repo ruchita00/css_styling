@@ -40,7 +40,7 @@ const colourStyles = {
   },
   menu: (css) => ({
     ...css,
-    width: "150px",
+    width: "120px",
     // ...(isCalculatingWidth && { height: 0, visibility: "hidden" })
   }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
@@ -49,6 +49,7 @@ const colourStyles = {
     return {
       ...styles,
       width: "150px",
+      
       backgroundColor: isSelected ? "#F1F4F5" : "#FFFFFF",
       Color: isSelected ? "black" : "black",
 
@@ -124,7 +125,7 @@ const Option = (props) => {
         backgroundColor: isSelected ? "#E5E5E5" : "#FFFFFF",
         height: "40px",
         flex: 1,
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
@@ -150,7 +151,7 @@ const DropdownMenu = () => (
     label="Single select"
     options={data}
     styles={colourStyles}
-    style={{ width: "120px" }}
+    style={{ width: "150px" }}
     menuPosition={"fixed"}
     menuPlacement={"auto"}
     components={{
