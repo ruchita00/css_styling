@@ -29,7 +29,9 @@ const colourStyles = {
       left: "435px",
       top: "120px",
       background: "#ffffff",
+      // margin:'5px',
       border: "1px solid #036FCB",
+      // padding:'1px',
       boxSizing: "border-box",
       boxShadow: "0px 2px 10px rgba(0,0,0,0.08)",
       borderRadius: "8px",
@@ -106,7 +108,10 @@ const Option = (props) => {
         backgroundColor: isSelected ? "#E5E5E5" : "#FFFFFF",
         height: "40px",
         flex: 1,
+        // margin:'3px',
+
         justifyContent: "center",
+        padding:'10px',
         alignItems: "center",
       }}
     >
@@ -116,6 +121,10 @@ const Option = (props) => {
             height: "10px",
             width: "10px",
             borderRadius: "5px",
+            margin:'10px',
+            // justifyContent: "center",
+        // padding:'20px',
+        // alignItems: "center",
             backgroundColor: color,
           }}
         ></div>
